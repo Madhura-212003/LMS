@@ -1,0 +1,104 @@
+{
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Manage all LMS functions within the configured institution/campus.",
+      "displayName": "Admin",
+      "id": "8260db36-3b32-5e2b-89de-53e71d51fc55",
+      "isEnabled": true,
+      "value": "Admin"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Manage courses, cohorts, rosters, schedules and course-staff assignments; view teaching reports.",
+      "displayName": "Coordinator",
+      "id": "c5dc3c8e-3979-59cf-9e01-859ac91ea849",
+      "isEnabled": true,
+      "value": "Coordinator"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Teach assigned courses, author/review learning content and assessments, and mark work.",
+      "displayName": "Teacher",
+      "id": "51be5213-63f8-56be-bdae-ff2bf9fc7f14",
+      "isEnabled": true,
+      "value": "Teacher"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Create/edit lesson drafts and submit them for review in assigned courses; cannot approve or publish.",
+      "displayName": "Author",
+      "id": "3fb76b89-10b1-536c-93a4-c264196ab8b8",
+      "isEnabled": true,
+      "value": "Author"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Review/approve/publish lesson content and approve translations in assigned courses; cannot author drafts.",
+      "displayName": "Reviewer",
+      "id": "6a64bcd8-b4be-53a0-8f9a-b1e3d4c5cfc5",
+      "isEnabled": true,
+      "value": "Reviewer"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Assist assigned live classes and mark/re-evaluate assigned learner work; cannot author assessments or manage staff.",
+      "displayName": "Teaching Assistant",
+      "id": "221302a3-2008-5af2-8b10-d6d58c9b1521",
+      "isEnabled": true,
+      "value": "TA"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Manage institution/campus library resources and loans; no private learner submissions.",
+      "displayName": "Librarian",
+      "id": "7a1cf101-ade7-563c-91b2-80c612a969bc",
+      "isEnabled": true,
+      "value": "Librarian"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Submit translations and manage glossary terms for assigned courses; cannot approve translations.",
+      "displayName": "Translator",
+      "id": "aede8807-7b38-50fd-b836-118bbdcc78c7",
+      "isEnabled": true,
+      "value": "Translator"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Manage own courses and marketplace listings; no payment settlement.",
+      "displayName": "Seller",
+      "id": "4e8fc3c3-382c-5740-8e21-81c7e4260992",
+      "isEnabled": true,
+      "value": "Seller"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Access own enrolled learning, submit work and view own results/credentials.",
+      "displayName": "Learner",
+      "id": "76a03b2b-21ad-5bca-858d-b1edd49d7894",
+      "isEnabled": true,
+      "value": "Learner"
+    }
+  ]
+}

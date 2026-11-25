@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": ["${workspaceFolder}/backend"],
+  "files.exclude": {"**/__pycache__": true},
+  "search.exclude": {"**/.venv": true, "**/node_modules": true, "**/.next": true},
+  "typescript.tsdk": "frontend/node_modules/typescript/lib"
+}

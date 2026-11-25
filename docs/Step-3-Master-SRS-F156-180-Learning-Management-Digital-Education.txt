@@ -1,0 +1,711 @@
+Step 3 — Master SRS
+F. Learning Management and Digital Education — Master SRS
+SRS-F-156-180 v1.0 / Draft  •  Admiezo ERP  •  Section F, Managements 156–180
+MASTER SRS for Section F — all 25 managements, F.156 to F.180, in ONE document. It defines WHAT users do, WHAT they see, and HOW success is verified. It does NOT define field types, API payloads, or database constraints — those are in Step 4 (LLD-F-156-180 v1.0, delivered separately).
+Reading rule: MUST = required, no exception. MUST NOT = forbidden. SHOULD = required unless a signed-off exception exists. “Sample data” = hard-coded / browser-stored preview records in the wireframe catalogue, not live production records.
+Document control
+Item
+Entry
+Module and feature
+Section F — Learning Management and Digital Education | F.156 to F.180 (25 managements) — Master SRS
+Document and revision
+SRS-F-156-180 v1.0, Draft | Owner: Prashant Kumar | Approval: Pending | Implements: Section F list F.156–F.180 as supplied by the user
+Applicable references
+Step 1 ERP Master Module Map ERP-DOC-001 v0.1 Draft; Step 2 Shared Platform Technical Design ERP-DOC-002; Admiezo UI Kit (navigation, cards, tables, forms, buttons, status badges, icons, responsive layouts); LMS wireframe catalogue
+Delivery scope
+IN SCOPE: all 25 managements F.156–F.180, journeys, screens, states, acceptance. OUT OF SCOPE: Admission module (separate master SRS), production deployment / hosting, real payment settlement (marketplace preview only), live video provider contract, live translation service contract, lab / IDE provider contract — each is an Open Decision in §9.
+Product Lead
+Prashant
+Architect / Engineering Lead
+Hala Swamy
+
+F.156–F.180 — Master feature catalogue (25 managements)
+#
+Feature ID — Title
+Screens (catalogue)
+156
+FTR-156 — Learning Management System (LMS)
+LMS Home, left-bar modules, courses, cohorts, enrolment, My Courses, Teaching Dashboard
+157
+FTR-157 — Learning Content Management
+Content Editor, Content Review, Course Viewer / Lesson Page, Content Catalogue
+158
+FTR-158 — Digital Library Learning Resource Management
+Library Catalogue, Resource Management, My Library, Resource Reader, Librarian Dashboard
+159
+FTR-159 — Live Class Management
+Class Schedule / Manage, Live Class Room, Attendance Summary, Learner Class Schedule
+160
+FTR-160 — Recorded Lecture Management
+Lecture Upload / Edit / Publish, Learner Lecture Player, Lecture Library / Search
+161
+FTR-161 — Learning Path Management
+Path Builder, Teacher Path Progress, Learner Path View, Path Catalogue / Search
+162
+FTR-162 — Personalised Learning Management
+Learner What Next, Teacher Class Insights, Personalisation Settings
+163
+FTR-163 — AI Tutor Management
+AI Tutor Chat, Teacher Tutor Review, Tutor Policy / Settings, AI Assistant (General + Lesson)
+164
+FTR-164 — Multilingual Learning Support Management
+Language Preference, Translated Content View, Translation Queue / Editor, Glossary and Coverage
+165
+FTR-165 — Assignment Submission Management
+Assignment Create / Manage, Learner Assignment Submit, Teacher Submissions
+166
+FTR-166 — Assignment Feedback Management
+Marking, Marking / Re-evaluation Queue, Learner Feedback View
+167
+FTR-167 — Learning Activity Management
+Activity Create / Manage, Learner Activity / Discussion, Teacher Participation
+168
+FTR-168 — Quiz and Practice Test Management
+Quiz Create / Manage, Learner Quiz Attempt, Teacher Quiz Results, Question Bank
+169
+FTR-169 — Coding Practice Management
+Coding Practice Library, Coding Attempt / Editor, Teacher Coding Results
+170
+FTR-170 — Programming Lab Management
+Programming Lab Catalogue, Lab Session / IDE, Teacher Lab Results
+171
+FTR-171 — Digital Skills Training Management
+Digital Skills Catalogue, Learner Skills View, Teacher Skills Progress
+172
+FTR-172 — Communication Skills Learning Management
+Communication Practice Library, Practice Session, Teacher Communication Review
+173
+FTR-173 — Competitive Exam Preparation Management
+Competitive Exam Catalogue, Exam Practice / Mock, Teacher Exam Insights
+174
+FTR-174 — NEET Preparation Management
+NEET Catalogue (Physics / Chemistry / Botany / Zoology), NEET Practice / Mock, NEET Insights, NEET Previous Papers
+175
+FTR-175 — JEE Preparation Management
+JEE Catalogue (Physics / Chemistry / Maths), JEE Practice / Mock, JEE Insights, JEE Previous Papers
+176
+FTR-176 — UPSC and Civil Service Preparation Management
+UPSC Catalogue (GS / Optional / Essay / Current Affairs), UPSC Practice / Mock, UPSC Insights
+177
+FTR-177 — Placement Preparation Management
+Placement Catalogue (Aptitude / Interview / GD), Placement Practice / Mock, Teacher Placement Insights
+178
+FTR-178 — Career Skills Management
+Career Skills Catalogue, Career Skills Activity, Teacher Career Insights
+179
+FTR-179 — Micro-Credential Management
+Micro-Credential Catalogue, Learner Credential Wall, Credential Rules / Award, Certificate Detail / Verify, Progress Dashboard
+180
+FTR-180 — Online Course Marketplace Management
+Marketplace Browse, Marketplace Course Detail, Marketplace Purchase / Enrol, Marketplace Seller Dashboard
+
+Outcome and actors
+Item
+Entry
+Outcome and trigger
+A learner can discover a course, enrol, learn (content / live / recorded / labs / practice / coding / exam prep), get help (AI Tutor / teacher), be assessed, earn micro-credentials / certificates, and track progress — and a teacher / coordinator / admin can create, publish, manage, and monitor all of it. Trigger: user opens LMS Home from the Admiezo ERP dashboard. Successful end state: learner progress, assessment results, micro-credentials, and certificates are visible and consistent across Home, My Courses, Progress, and Certificate screens.
+Actors and scope
+Learner • Teacher / Author / Reviewer • Teaching Assistant (TA) • Coordinator • Librarian • Translator / Reviewer • Seller • Admin. Scope: one tenant / institution, one campus at a time. A user sees ONLY the courses / cohorts / content they are enrolled in or assigned to, except public catalogue / marketplace browse.
+Dependencies
+Admission — enrolment source for admitted learners; Identity & Access — login + roles; Notification — announcements / notifications; Document Storage — content / lecture / library files. If a dependency is unavailable, the dependent screen shows Unavailable with a recovery path.
+
+Login credentials — demo / staging ONLY
+For DEMO / STAGING review only. MUST NOT be used as real production credentials, MUST NOT be committed as real secrets, MUST be replaced by Identity & Access (Entra / SSO) before production. Who comes under each login is stated.
+Login (demo / staging)
+Roles under this login
+What this login can do
+Admin — admin@admiezo.demo / Admiezo@123
+Admin, Coordinator, Librarian, Seller
+All LMS screens; create / publish / manage everything; manage users / cohorts / enrolment; view all progress.
+Teacher — teacher@admiezo.demo / Teach@123
+Teacher, Author, Reviewer, TA
+Create / edit content, courses, paths, assignments, quizzes, coding / labs, exam packs; manage live / recorded classes; mark; review AI Tutor; view class progress.
+Student — student@admiezo.demo / Learn@123
+Learner / Student
+Browse catalogue / marketplace, enrol, learn, submit, view feedback / micro-credentials / certificates / progress, use AI Assistant.
+Librarian — librarian@admiezo.demo / Library@123
+Librarian
+Manage library resources, Librarian Dashboard, My Library / Resource Reader access.
+Coordinator — coordinator@admiezo.demo / Coord@123
+Coordinator
+Cohort setup, enrolment roster, class schedule, path progress, placement / exam insights, announcements.
+
+Roles in detail: Admin = runs everything. Teacher = teaches + creates + marks. Author = creates lesson content. Reviewer = approves / sends back content (Draft → In Review → Approved / Needs Changes → Published). TA = helps with live classes + marking. Coordinator = runs cohorts + enrolment + schedules. Librarian = runs the library. Translator / Reviewer = translates content, manages glossary. Seller = manages marketplace courses. Learner = learns + submits + tracks progress.
+Login behaviour (production intent): wrong credential → “Invalid email or password” (does not reveal which part was wrong); 5 failed attempts → locked 15 minutes; success → LMS Home with the left-bar modules for that role. In the current wireframe preview, login is bypassed / demo — see §9 OPEN-01.
+Global requirements and business rules
+Requirement ID
+Required behavior
+Rules
+F-REQ-G01
+Left-bar navigation: LMS Home shows a left bar with the Section F modules. Clicking a module shows its sub-features INSIDE that module (not a new top-level page).
+UI-NAV-01; LMS Home + left bar; user-friendly UI — module name + icon + active state; collapsed on mobile with menu button.
+F-REQ-G02
+A user sees ONLY courses / cohorts / content they are enrolled in or assigned to, except public catalogue / marketplace browse.
+SEC-01; every learner screen; teacher sees only assigned courses; admin/coordinator see campus scope.
+F-REQ-G03
+Every list screen supports search, filter, and sort; every detail screen shows status, owner, and last-updated.
+UX-LIST-01; all catalogue / roster / queue screens.
+F-REQ-G04
+Every write action shows Loading → Success (what changed) or Failure (what to do next). No silent writes.
+UX-FEEDBACK-01; all write actions.
+F-REQ-G05
+No action deletes a record with dependent progress / submissions / credentials without a confirm step and an audit entry.
+DATA-DEL-01; courses, content, assignments, quizzes, paths, credentials.
+F-REQ-G06
+AI answers are generated and MUST be shown as generated (not verified facts).
+AI-DISC-01; AI Tutor + AI Assistant.
+F-REQ-G07
+Lesson content and AI answers in Lesson mode are page-memory only in the current build and disappear on refresh; no lesson database or saved chat history is claimed.
+DATA-MEM-01; AI Tutor / AI Assistant; production lesson DB is future work.
+
+Feature requirements — F.156 to F.180
+Feature
+Key requirements
+156 LMS
+F-REQ-156-01 LMS Home shows Continue Learning, upcoming, due, insights per role. / 156-02 Left-bar modules + sub-features inside module. / 156-03 Course Catalogue shows published courses (title, teacher, duration, level, rating, price/free). / 156-04 Course Editor creates/edits course. / 156-05 Cohort Setup creates cohort (name, course, start/end, capacity, teacher). / 156-06 Enrolment Roster shows enrolled learners, enrol/remove, waitlist when full. / 156-07 My Courses shows learner’s enrolled courses + progress. / 156-08 Teaching Dashboard shows teacher’s courses, cohorts, pending marking, upcoming classes.
+157 Learning Content
+157-01 Content Editor creates/edits lesson content (text, media, files, quiz links). / 157-02 Content Review routes Draft → In Review → Approved / Needs Changes → Published. / 157-03 Course Viewer / Lesson Page shows lesson content in order, next/previous, progress, completion, AI Assistant inside lesson page. / 157-04 Content Catalogue lists all content with status + owner.
+158 Digital Library
+158-01 Library Catalogue browses resources by title, subject, type, language. / 158-02 Resource Management adds/edits/removes resources (librarian). / 158-03 My Library shows learner’s saved / borrowed resources. / 158-04 Resource Reader opens a resource in-page. / 158-05 Librarian Dashboard shows usage, popular resources, due / overdue.
+159 Live Class
+159-01 Class Schedule / Manage creates/edits/cancels live classes (course, cohort, teacher, time, link). / 159-02 Live Class Room joins class, shows participants, chat, hand-raise. / 159-03 Attendance Summary shows present/absent/late per class + cohort. / 159-04 Learner Class Schedule shows learner’s upcoming / past classes.
+160 Recorded Lecture
+160-01 Lecture Upload / Edit / Publish uploads lecture, edits title/description, publishes/unpublishes. / 160-02 Learner Lecture Player plays lecture with seek, speed, captions, notes. / 160-03 Lecture Library / Search searches lectures by course, teacher, topic.
+161 Learning Path
+161-01 Path Builder creates a path (ordered steps: courses, lessons, quizzes, labs). / 161-02 Teacher Path Progress shows cohort progress per step. / 161-03 Learner Path View shows learner’s path, current step, next step. / 161-04 Path Catalogue / Search browses published paths.
+162 Personalised Learning
+162-01 Learner What Next recommends next lesson / activity from progress + gaps. / 162-02 Teacher Class Insights shows class strengths / gaps by topic. / 162-03 Personalisation Settings lets learner set goals, pace, language, notification preferences.
+163 AI Tutor
+163-01 AI Tutor Chat answers learner questions (General + Lesson modes). / 163-02 Teacher Tutor Review shows tutor conversations / flagged answers. / 163-03 Tutor Policy / Settings sets allowed topics, tone, escalation, what tutor MUST NOT answer. / 163-04 AI Assistant (see §6) — summary / answer appears IN the lesson page.
+164 Multilingual
+164-01 Language Preference sets learner’s UI + content language. / 164-02 Translated Content View shows translated lesson. / 164-03 Translation Queue / Editor queues untranslated content, lets translator edit + submit. / 164-04 Glossary and Coverage shows glossary terms + translation coverage per course.
+165 Assignment Submission
+165-01 Assignment Create / Manage creates assignment (title, instructions, due date, marks, attachments). / 165-02 Learner Assignment Submit uploads / submits, shows Submitted / Late / Resubmit states. / 165-03 Teacher Submissions lists submissions per assignment with status.
+166 Assignment Feedback
+166-01 Marking lets teacher mark a submission, add marks + feedback + rubric. / 166-02 Marking / Re-evaluation Queue lists unmarked + re-evaluation requests. / 166-03 Learner Feedback View shows marks, feedback, re-evaluation status.
+167 Learning Activity
+167-01 Activity Create / Manage creates discussion / activity (prompt, due, groups). / 167-02 Learner Activity / Discussion lets learner post, reply, react. / 167-03 Teacher Participation shows participation per learner.
+168 Quiz and Practice Test
+168-01 Quiz Create / Manage creates quiz (questions, marks, time, attempts). / 168-02 Learner Quiz Attempt attempts with timer, auto-save, submit. / 168-03 Teacher Quiz Results shows scores, per-question analysis. / 168-04 Question Bank manages reusable questions by topic / difficulty.
+169 Coding Practice
+169-01 Coding Practice Library browses coding problems by topic / difficulty / language. / 169-02 Coding Attempt / Editor lets learner write, run, and submit code with instant feedback. / 169-03 Teacher Coding Results shows coding scores per learner.
+170 Programming Lab
+170-01 Programming Lab Catalogue browses labs by subject / difficulty / language. / 170-02 Lab Session / IDE runs a lab step-by-step with code editor, inputs, observations, result. / 170-03 Teacher Lab Results shows lab completion + scores.
+171 Digital Skills Training
+171-01 Digital Skills Catalogue browses digital skills (e.g. MS Office, spreadsheets, typing, internet safety, AI tools). / 171-02 Learner Skills View shows track steps + progress + next step. / 171-03 Teacher Skills Progress shows cohort progress per skill.
+172 Communication Skills
+172-01 Communication Practice Library browses speaking / writing prompts. / 172-02 Communication Practice Session records / submits a speaking / writing attempt with feedback. / 172-03 Teacher Communication Review reviews attempts + gives feedback.
+173 Competitive Exam Prep
+173-01 Competitive Exam Catalogue browses exam packs (e.g. CET, SSC, Banking, Railway). / 173-02 Exam Practice / Mock attempts timed mock papers with solutions. / 173-03 Teacher Exam Insights shows cohort exam readiness.
+174 NEET Preparation
+174-01 NEET Catalogue browses NEET packs by subject (Physics / Chemistry / Botany / Zoology). / 174-02 NEET Practice / Mock attempts timed NEET mocks with solutions + negative-marking logic. / 174-03 NEET Insights shows cohort NEET readiness + weak topics. / 174-04 NEET Previous Papers browses previous-year papers with solutions.
+175 JEE Preparation
+175-01 JEE Catalogue browses JEE packs by subject (Physics / Chemistry / Maths) and level (Main / Advanced). / 175-02 JEE Practice / Mock attempts timed JEE mocks with solutions. / 175-03 JEE Insights shows cohort JEE readiness + weak topics. / 175-04 JEE Previous Papers browses previous-year papers with solutions.
+176 UPSC / Civil Service
+176-01 UPSC Catalogue browses UPSC packs (GS I–IV, Optional, Essay, Current Affairs, Prelims / Mains). / 176-02 UPSC Practice / Mock attempts Prelims mocks + Mains answer-writing practice. / 176-03 UPSC Insights shows cohort readiness + weak areas.
+177 Placement Preparation
+177-01 Placement Catalogue browses aptitude / interview / GD packs. / 177-02 Placement Practice / Mock attempts mock tests / mock interviews / GD. / 177-03 Teacher Placement Insights shows cohort placement readiness.
+178 Career Skills
+178-01 Career Skills Catalogue browses resume / interview / workplace skills. / 178-02 Career Skills Activity completes an activity (resume, mock interview, portfolio). / 178-03 Teacher Career Insights shows cohort career readiness.
+179 Micro-Credential
+179-01 Micro-Credential Catalogue shows micro-credentials + how to earn each. / 179-02 Learner Credential Wall shows learner’s earned micro-credentials + progress to next. / 179-03 Credential Rules / Award defines rules and awards credentials (auto on rule, or manual by teacher/admin). / 179-04 Certificate Detail / Verify shows certificate + verification (code / QR). / 179-05 Progress Dashboard shows overall progress, per-course progress, streak.
+180 Online Course Marketplace
+180-01 Marketplace Browse browses paid / free courses from sellers. / 180-02 Marketplace Course Detail shows course, teacher, syllabus, reviews, price. / 180-03 Marketplace Purchase / Enrol enrols after purchase (preview only — no real payment settlement). / 180-04 Marketplace Seller Dashboard shows seller’s courses, enrolments, earnings (preview).
+
+AI Assistant — General + Lesson Mode (F.163 / F.157)
+Student lesson page → LMS backend checks access, retrieves content, calls API provider → summary / answer appears IN the lesson page. Modules are in the left bar; clicking a module shows its sub-features inside that module. User-friendly UI.
+Requirement ID
+Required behavior
+Rules
+F-REQ-AI-01
+AI Assistant has exactly two modes: General questions (default) and Lesson mode.
+Mode switch clears previous result; no stale response after mode/lesson change.
+F-REQ-AI-02
+General mode: user asks a question with no lesson text; assistant answers from the AI provider’s model knowledge.
+No live internet search. No conversational memory. Each request independent.
+F-REQ-AI-03
+Lesson mode: user pastes / lesson page supplies lesson content; assistant generates a summary of THAT lesson, or answers a question about THAT lesson.
+Answer ONLY from supplied lesson. Provide a supporting quote. Acknowledge when lesson does not contain enough information.
+F-REQ-AI-04
+Summary / answer appears INSIDE the lesson page (Lesson mode) / inside the assistant panel (General mode) — never as a new tab or download.
+Displayed safely as text, never as raw HTML.
+F-REQ-AI-05
+Backend checks access before calling the API provider: user must be enrolled / assigned to the lesson’s course. If not, show “You do not have access to this lesson” and make NO provider call.
+SEC-01; access check is server-side, never browser-only.
+F-REQ-AI-06
+Backend retrieves lesson content, calls the API provider, returns generated text or a readable error.
+Provider key / model live ONLY in backend config (backend/.env in current build), never in browser JavaScript.
+F-REQ-AI-07
+Limits: lesson text max 60,000 characters; question max 2,000 characters. Over limit → readable error, no provider call.
+Validation is server-side.
+F-REQ-AI-08
+Duplicate submissions are disabled while waiting. Changing mode or lesson clears the previous result.
+Stale-response guard: older response after a change MUST NOT appear.
+F-REQ-AI-09
+API provider setting: leave a single, clearly-marked place in the backend code / config to paste the API key + model, so changing provider / key / model does not require a code change.
+Current build: backend/.env (API key + model), reloaded on every request. Production: config / secret store — see LLD.
+F-REQ-AI-10
+Generated answers are shown as generated and need checking. Teacher Tutor Review can flag / review tutor answers.
+AI-DISC-01.
+
+User journeys and screen mapping
+Journey and step
+Screen and action
+Entry and result
+F-JRN-001 Learner learns a lesson / 01
+LMS Home / Open LMS Home
+Learner logged in → Home shows Continue Learning + upcoming + due.
+F-JRN-001 / 02
+Left-bar / Open module (e.g. Learning Content)
+Click module in left bar → sub-features shown INSIDE that module.
+F-JRN-001 / 03
+My Courses / Open a course
+Enrolled learner → Course Viewer opens lesson in order.
+F-JRN-001 / 04
+Course Viewer / Open lesson
+Enrolled learner → lesson content shown; progress updated.
+F-JRN-001 / 05
+AI Assistant / Summarise lesson (Lesson mode)
+Enrolled learner → backend checks access → retrieves lesson → calls API provider → summary appears IN lesson page.
+F-JRN-001 / 06
+AI Assistant / Ask question about lesson
+Learner asks → answer (grounded in lesson + quote) appears IN lesson page; if lesson lacks info, answer says so.
+F-JRN-002 Teacher creates + publishes / 01
+Course Editor / Create course
+Teacher → Course Editor → Draft course.
+F-JRN-002 / 02
+Content Editor / Create content
+Author → Content Editor → Draft lesson.
+F-JRN-002 / 03
+Content Review / Submit → Approve
+Reviewer → In Review → Approved / Needs Changes → Published.
+F-JRN-002 / 04
+Cohort Setup / Create cohort + enrol
+Coordinator → Cohort Setup → Enrolment Roster → learners enrolled.
+F-JRN-003 Learner is assessed / 01
+Quiz Attempt / Attempt quiz
+Enrolled learner → timer + auto-save → Submit.
+F-JRN-003 / 02
+Marking / Mark submission
+Teacher → marks + feedback → learner sees Feedback View.
+F-JRN-003 / 03
+Credential Wall / Earn micro-credential
+Rule met → micro-credential awarded → Credential Wall + Progress + Certificate (if earned) update.
+F-JRN-004 Learner attends live class / 01
+Learner Class Schedule / View schedule
+Learner → upcoming classes.
+F-JRN-004 / 02
+Live Class Room / Join class
+At class time → Join → Room opens.
+F-JRN-004 / 03
+Attendance Summary / View attendance
+After class → Attendance shows present/absent/late.
+F-JRN-005 Learner prepares for NEET / JEE / UPSC / Competitive / Placement / 01
+Exam Catalogue / Browse pack
+Learner → exam catalogue → Practice / Mock → solutions + insights.
+F-JRN-006 Learner buys marketplace course / 01
+Marketplace Browse / Browse → Detail → Purchase / Enrol (preview)
+Learner → course appears in My Courses.
+Failure branch (all journeys)
+Any screen / Any action — FAIL
+Not enrolled / not assigned / unavailable → readable message + recovery (enrol / ask teacher / retry). No silent failure.
+
+Screen behavior
+One block per screen group. Use the same Screen ID in the LLD and approved visual reference. Applicable states for every group: Loading, Empty, Read-only, Invalid, Unavailable, Success — as listed in Screen states; N/A with reason where a state does not apply.
+F-SCR-156 LMS Home / Left-bar / Courses & Cohorts
+Mapping
+Entry
+Information shown
+LMS Home, left-bar modules, Course Catalogue, Course Editor, Cohort Setup, Enrolment Roster, My Courses, Teaching Dashboard.
+Actions
+Open Home / Open module / Open course / Create-edit course / Create cohort / Enrol-remove learner / View teaching dashboard.
+Screen states
+Loading (skeleton); Empty (no enrolment — show Browse Catalogue); Full cohort (waitlist); Invalid (missing fields); Success.
+Navigation
+Success → course / cohort / roster. Cancel → list. Back → ERP dashboard.
+
+F-SCR-157 Learning Content
+Mapping
+Entry
+Information shown
+Content Editor, Content Review, Course Viewer / Lesson Page, Content Catalogue.
+Actions
+Create/edit content; Submit for review; Approve / Needs Changes; Publish; Open lesson; Mark complete; Summarise lesson; Ask question about lesson.
+Screen states
+Draft; In Review; Approved; Needs Changes (comment required); Published; No access (not enrolled); AI loading / AI error (readable); Success.
+Navigation
+Success → catalogue / viewer. AI error → retry, lesson stays visible. Back → catalogue.
+
+F-SCR-158 Digital Library
+Mapping
+Entry
+Information shown
+Library Catalogue, Resource Management, My Library, Resource Reader, Librarian Dashboard.
+Actions
+Browse; Add/edit resource; Save / borrow; Open reader.
+Screen states
+Loading; Empty; Unavailable (file missing); Success.
+Navigation
+Success → reader / My Library. Back → catalogue.
+
+F-SCR-159 Live Classes
+Mapping
+Entry
+Information shown
+Class Schedule / Manage, Live Class Room, Attendance Summary, Learner Class Schedule.
+Actions
+Create/edit/cancel class; Join room; Mark attendance; View attendance.
+Screen states
+Scheduled; Live; Ended; Cancelled; Join failed (readable); Success.
+Navigation
+Success → room / attendance. Back → schedule.
+
+F-SCR-160 Recorded Lectures
+Mapping
+Entry
+Information shown
+Lecture Upload / Edit / Publish, Lecture Player, Lecture Library / Search.
+Actions
+Upload/edit; Publish/unpublish; Play; Search.
+Screen states
+Uploading; Draft; Published; Playback error (readable); Success.
+Navigation
+Success → library / player. Back → library.
+
+F-SCR-161 Learning Paths
+Mapping
+Entry
+Information shown
+Path Builder, Teacher Path Progress, Learner Path View, Path Catalogue / Search.
+Actions
+Create/edit path; Publish; View progress; Start / continue path.
+Screen states
+Draft; Published; In progress; Completed; Success.
+Navigation
+Success → path view / catalogue. Back → catalogue.
+
+F-SCR-162 Personalised Learning
+Mapping
+Entry
+Information shown
+Learner What Next, Teacher Class Insights, Personalisation Settings.
+Actions
+View What Next; View class insights; Save settings.
+Screen states
+Loading; Empty (no data yet); Success.
+Navigation
+Success → lesson / activity. Back → Home.
+
+F-SCR-163 AI Tutor + AI Assistant
+Mapping
+Entry
+Information shown
+AI Tutor Chat, Teacher Tutor Review, Tutor Policy / Settings, AI Assistant (General + Lesson).
+Actions
+Ask tutor; Flag answer; Review flagged; Save tutor policy; Summarise lesson; Ask about lesson; Ask general question; Switch mode.
+Screen states
+Loading (buttons disabled); Empty (no result yet); No access; Invalid / too long; Provider / config error (readable); Flagged; Policy saved; Success (text, with quote in Lesson mode).
+Navigation
+Success → result in lesson page / assistant panel. Mode/lesson change → result cleared.
+
+F-SCR-164 Multilingual
+Mapping
+Entry
+Information shown
+Language Preference, Translated Content View, Translation Queue / Editor, Glossary and Coverage.
+Actions
+Set language; View translated; Submit translation; Approve translation.
+Screen states
+Loading; No translation (show original + notice); In translation; Translated; Success.
+Navigation
+Success → translated view / queue. Back → catalogue.
+
+F-SCR-165–166 Assignments + Feedback
+Mapping
+Entry
+Information shown
+Assignment Create / Manage, Learner Submit, Teacher Submissions, Marking, Re-evaluation Queue, Feedback View.
+Actions
+Create assignment; Submit; Resubmit; Mark; Request re-evaluation.
+Screen states
+Draft; Published; Submitted; Late; Marked; Re-evaluation requested; Success.
+Navigation
+Success → submissions / feedback. Back → assignment list.
+
+F-SCR-167 Learning Activities
+Mapping
+Entry
+Information shown
+Activity Create / Manage, Activity / Discussion, Teacher Participation.
+Actions
+Create activity; Post / reply; View participation.
+Screen states
+Draft; Published; Closed; Success.
+Navigation
+Success → activity / participation. Back → activity list.
+
+F-SCR-168 Quiz and Practice Tests
+Mapping
+Entry
+Information shown
+Quiz Create / Manage, Learner Quiz Attempt, Teacher Quiz Results, Question Bank.
+Actions
+Create quiz; Attempt; Submit; View results; Manage question bank.
+Screen states
+Draft; Published; In progress (auto-saved); Submitted; Graded; Time expired; Success.
+Navigation
+Success → results. Back → quiz list.
+
+F-SCR-169 Coding Practice
+Mapping
+Entry
+Information shown
+Coding Practice Library, Coding Attempt / Editor, Teacher Coding Results.
+Actions
+Browse problems; Write / run / submit code; View results.
+Screen states
+Loading; In progress; Completed (with feedback); Run failed (readable); Success.
+Navigation
+Success → library / results. Back → library.
+
+F-SCR-170 Programming Labs
+Mapping
+Entry
+Information shown
+Programming Lab Catalogue, Lab Session / IDE, Teacher Lab Results.
+Actions
+Browse labs; Start lab; Submit lab; View lab results.
+Screen states
+Loading; In progress; Completed; Lab error (readable); Success.
+Navigation
+Success → catalogue / results. Back → catalogue.
+
+F-SCR-171 Digital Skills
+Mapping
+Entry
+Information shown
+Digital Skills Catalogue, Learner Skills View, Teacher Skills Progress.
+Actions
+Browse skills; Start / continue skill; View progress.
+Screen states
+Not started; In progress; Completed; Success.
+Navigation
+Success → skills view. Back → catalogue.
+
+F-SCR-172 Communication Skills
+Mapping
+Entry
+Information shown
+Communication Practice Library, Practice Session, Teacher Communication Review.
+Actions
+Browse prompts; Start session; Submit attempt; Review attempt.
+Screen states
+Loading; Recording / in progress; Submitted; Reviewed; Success.
+Navigation
+Success → library / review. Back → library.
+
+F-SCR-173–176 Exam Prep: Competitive / NEET / JEE / UPSC
+Mapping
+Entry
+Information shown
+Exam Catalogues, Practice / Mock, Insights, Previous Papers (NEET / JEE).
+Actions
+Browse packs; Attempt mock; View insights; Browse previous papers.
+Screen states
+Loading; In progress; Completed (with solutions); Success.
+Navigation
+Success → catalogue / insights. Back → catalogue.
+
+F-SCR-177 Placement Prep
+Mapping
+Entry
+Information shown
+Placement Catalogue, Placement Practice / Mock, Teacher Placement Insights.
+Actions
+Browse packs; Attempt mock; View insights.
+Screen states
+Loading; In progress; Completed; Success.
+Navigation
+Success → catalogue / insights. Back → catalogue.
+
+F-SCR-178 Career Skills
+Mapping
+Entry
+Information shown
+Career Skills Catalogue, Career Skills Activity, Teacher Career Insights.
+Actions
+Browse skills; Complete activity; View insights.
+Screen states
+Loading; In progress; Completed; Success.
+Navigation
+Success → catalogue / insights. Back → catalogue.
+
+F-SCR-179 Micro-Credentials
+Mapping
+Entry
+Information shown
+Micro-Credential Catalogue, Learner Credential Wall, Credential Rules / Award, Certificate Detail / Verify, Progress Dashboard.
+Actions
+View credentials; Define rule; Award credential; View certificate; Verify certificate; View progress.
+Screen states
+Locked; In progress; Earned; Awarded; Not yet earned; Invalid verification; Verified; Success.
+Navigation
+Success → credential wall / certificate detail. Back → progress.
+
+F-SCR-180 Marketplace
+Mapping
+Entry
+Information shown
+Marketplace Browse, Course Detail, Purchase / Enrol, Seller Dashboard.
+Actions
+Browse; View detail; Purchase / enrol (preview); Manage seller course.
+Screen states
+Loading; Empty; Purchase failed (readable, preview); Enrolled; Success.
+Navigation
+Success → My Courses. Back → browse.
+
+F-SCR-Notifications
+Mapping
+Entry
+Information shown
+Notification Centre, Announcements, Messages / Discussion (supporting, in Section F).
+Actions
+View notifications; Mark read; Create announcement; Send message.
+Screen states
+Unread; Read; Sent; Failed (readable); Success.
+Navigation
+Success → notification list / discussion. Back → Home.
+
+Design handoff
+All Section F screens use the Admiezo UI Kit: shared navigation, cards, tables, forms, buttons, status badges, icons, responsive layouts. Standard patterns: list (catalogue / roster / queue), form (create / edit), detail (course / lesson / certificate), player (lecture / lab / IDE), chat (AI Tutor / AI Assistant), dashboard (Home / Teaching / Librarian / Progress). Flag for visual draft: Course Viewer + AI Assistant inside the lesson page (new / complex flow), Live Class Room, Programming Lab Session / IDE. Record layout, component, and implementation decisions in Step 4. Keep field types, API payloads, and database constraints in Step 4.
+Acceptance and approval
+Criterion and requirement
+Screen and action
+Given and when
+Then
+F-AC-001 / G01
+Left-bar / Open module
+Learner on LMS Home, clicks a module in the left bar
+Sub-features of that module are shown INSIDE the module; left bar stays visible; active module is highlighted.
+F-AC-002 / G02
+My Courses / Open course
+Learner opens My Courses
+Only that learner’s enrolled courses are shown.
+F-AC-003 / 157-02
+Content Review / Approve
+Reviewer approves content
+Status becomes Approved; content becomes publishable; audit entry is created.
+F-AC-004 / AI-05
+Course Viewer / Summarise lesson
+Learner NOT enrolled opens a lesson and presses Summarise
+“You do not have access to this lesson” is shown; NO provider call is made.
+F-AC-005 / AI-03
+Course Viewer / Summarise lesson
+Enrolled learner presses Summarise on a lesson
+Summary of THAT lesson, with a supporting quote, appears IN the lesson page.
+F-AC-006 / AI-03
+Course Viewer / Ask question about lesson
+Enrolled learner asks a question the lesson does not answer
+Answer acknowledges the lesson does not contain enough information; no invented answer.
+F-AC-007 / AI-02
+AI Assistant / Ask general question
+User asks a general question in General mode
+General answer appears in the assistant panel; no lesson text is required.
+F-AC-008 / AI-07
+AI Assistant / Summarise
+Lesson text > 60,000 chars or question > 2,000 chars
+Readable error naming the limit; no provider call.
+F-AC-009 / AI-08
+AI Assistant / Summarise
+User presses Summarise twice quickly / changes mode while waiting
+Buttons stay disabled while waiting; after mode/lesson change, previous result is cleared and no older response appears.
+F-AC-010 / 165-02
+Assignment Submit / Submit
+Enrolled learner submits an assignment
+Status becomes Submitted with timestamp; teacher sees it in Teacher Submissions.
+F-AC-011 / 168-02
+Quiz Attempt / Attempt quiz
+Learner attempts a quiz, timer expires
+Attempt auto-submits; status becomes Submitted; result appears after grading.
+F-AC-012 / 179-03
+Credential Wall / Earn micro-credential
+Learner meets a credential rule
+Micro-credential is awarded; Credential Wall, Progress, and (if applicable) Certificate List update.
+F-AC-013 / 179-04
+Certificate Detail / Verify
+Verifier enters a certificate code / QR
+Certificate is shown as Verified, or Invalid verification with a recovery message.
+F-AC-014 / 159-02
+Live Class Room / Join class
+Learner joins a live class at class time
+Live Class Room opens; attendance is recorded.
+F-AC-015 / 160-02
+Lecture Player / Play
+Learner plays a recorded lecture
+Player plays with seek / speed / captions; progress is saved.
+F-AC-016 / 158-04
+Resource Reader / Open resource
+Learner opens a library resource
+Resource Reader opens in-page; resource is added to My Library if saved.
+F-AC-017 / 180-03
+Marketplace / Purchase / Enrol
+Learner purchases / enrols in a marketplace course (preview)
+Course appears in My Courses; no real payment settlement is claimed.
+F-AC-018 / 169-02
+Coding Attempt / Run + Submit
+Learner runs and submits code
+Code runs, instant feedback is shown, submission is recorded with result.
+F-AC-019 / 170-02
+Lab Session / Submit lab
+Learner completes and submits a programming lab
+Lab is marked Completed; teacher sees it in Lab Results.
+F-AC-020 / 174-02
+NEET Practice / Attempt mock
+Learner attempts a NEET mock
+Timed mock completes, solutions + negative-marking score + weak topics are shown.
+F-AC-021 / 175-02
+JEE Practice / Attempt mock
+Learner attempts a JEE mock
+Timed mock completes, solutions + score + weak topics are shown.
+F-AC-022 / 176-02
+UPSC Practice / Attempt mock
+Learner attempts a UPSC Prelims mock / Mains answer-writing
+Mock completes, solutions / feedback + readiness are shown.
+F-AC-023 / G04
+Any write screen / Any write action
+User completes a write with missing required data
+Missing field is identified, submission is blocked, draft is preserved.
+F-AC-024 / G04
+Any write screen / Any write action
+User completes a valid write
+Success shows what changed; list / detail reflects the change.
+F-AC-025 / G06
+AI Tutor / Ask tutor
+Learner asks AI Tutor a question
+Answer is shown as generated (not verified); teacher can flag it in Tutor Review.
+
+Open decisions and signoff
+Decision
+Owner and disposition
+F-OPEN-01 Login / Identity — demo vs production: demo/staging credentials above are for review only. Production MUST use Identity & Access (Entra / SSO) with role mapping. Until then, wireframe preview bypasses login.
+Owner: Prashant / Architect: Hala Swamy — Blocks production build.
+F-OPEN-02 AI provider — provider, model, key storage, quota, and cost in production (current build: backend/.env, reloaded every request, model gemini-3.5-flash-lite in the as-built AI Assistant). Production: secret store + provider contract.
+Owner: Architect — Blocks production AI build.
+F-OPEN-03 Live video provider for Live Class Room — provider, recording, captions.
+Owner: Architect — Blocks Live Class production build.
+F-OPEN-04 Translation service for Multilingual — provider, quality review, glossary ownership.
+Owner: Architect — Blocks Multilingual production build.
+F-OPEN-05 Marketplace payment settlement — payment provider, refunds, seller payouts. Preview only in this SRS.
+Owner: Business Owner — Blocks Marketplace production build.
+F-OPEN-06 Programming Lab / IDE provider — lab runtime, isolation, code execution, scoring.
+Owner: Architect — Blocks Programming Lab production build.
+F-OPEN-07 Certificate / Micro-Credential verification — verification code / QR format, public verifier page, revocation.
+Owner: Business Owner — Blocks Credential production build.
+F-OPEN-08 Lesson database / automatic lesson loading for AI Assistant (production) — lesson text is pasted in current build; production needs a lesson store + access-checked retrieval.
+Owner: Architect — Blocks production AI build.
+F-OPEN-09 NEET / JEE / UPSC content — syllabus alignment, previous-paper licensing, negative-marking / scoring rules per exam board.
+Owner: Business Owner — Blocks Exam Prep production build.
+[Approval record]
+[Business Owner, UX Reviewer, QA Reviewer — decision and date: Pending. Put approved Word revision in toolkit registry.]
+
+Traceability: Every F-REQ-* above maps to a screen (F-SCR-*) and an acceptance criterion (F-AC-*) in this SRS, and to an LLD section in Step 4 (LLD-F-156-180 v1.0). Place Step 3 + Step 4 under docs/Requirements/Modules/Learning Management and Digital Education/. Register approved revisions, section headings, and the required visual references.

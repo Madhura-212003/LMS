@@ -1,0 +1,2921 @@
+{
+  "release": "0.3.1",
+  "date": "2026-11-25",
+  "scope": "Local browser screen/role smoke plus isolated HTTP integration tests; not every browser action or live provider certification. Screens exercised before metadata-only version bump from 0.3.0. Final workflow screenshot taken on 0.3.1.",
+  "primary": [
+    {
+      "role": "Admin",
+      "module": 156,
+      "heading": "My courses",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 157,
+      "heading": "Content catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 158,
+      "heading": "Library catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 159,
+      "heading": "Class schedule",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 160,
+      "heading": "Lecture library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 161,
+      "heading": "Path catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 162,
+      "heading": "What next",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 163,
+      "heading": "AI assistant",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 164,
+      "heading": "Language preference",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 165,
+      "heading": "Assignments",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 166,
+      "heading": "Feedback",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 167,
+      "heading": "Activities",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 168,
+      "heading": "Quiz catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 169,
+      "heading": "Problem library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 170,
+      "heading": "Lab catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 171,
+      "heading": "Skills catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 172,
+      "heading": "Practice library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 173,
+      "heading": "Exam catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 174,
+      "heading": "NEET catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 175,
+      "heading": "JEE catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 176,
+      "heading": "UPSC catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 177,
+      "heading": "Placement catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 178,
+      "heading": "Career catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 179,
+      "heading": "Credential wall",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Admin",
+      "module": 180,
+      "heading": "Marketplace browse",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Author",
+      "module": 156,
+      "heading": "My courses",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 157,
+      "heading": "Content catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 158,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 159,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 160,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 161,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 162,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 163,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 164,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 165,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 166,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 167,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 168,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 169,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 170,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 171,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 172,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 173,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 174,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 175,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 176,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 177,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 178,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 179,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Author",
+      "module": 180,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 156,
+      "heading": "My courses",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 157,
+      "heading": "Content catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 158,
+      "heading": "Library catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 159,
+      "heading": "Class schedule",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 160,
+      "heading": "Lecture library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 161,
+      "heading": "Path catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 162,
+      "heading": "What next",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 163,
+      "heading": "AI assistant",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 164,
+      "heading": "Language preference",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 165,
+      "heading": "Assignments",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 166,
+      "heading": "Feedback",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 167,
+      "heading": "Activities",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 168,
+      "heading": "Quiz catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 169,
+      "heading": "Problem library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 170,
+      "heading": "Lab catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 171,
+      "heading": "Skills catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 172,
+      "heading": "Practice library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 173,
+      "heading": "Exam catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 174,
+      "heading": "NEET catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 175,
+      "heading": "JEE catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 176,
+      "heading": "UPSC catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 177,
+      "heading": "Placement catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 178,
+      "heading": "Career catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 179,
+      "heading": "Credential wall",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Coordinator",
+      "module": 180,
+      "heading": "Marketplace browse",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Learner",
+      "module": 156,
+      "heading": "My courses",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 157,
+      "heading": "Content catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 158,
+      "heading": "Library catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 159,
+      "heading": "Class schedule",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 160,
+      "heading": "Lecture library",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 161,
+      "heading": "Path catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 162,
+      "heading": "What next",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 163,
+      "heading": "AI assistant",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 164,
+      "heading": "Language preference",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 165,
+      "heading": "Assignments",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 166,
+      "heading": "Feedback",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 167,
+      "heading": "Activities",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 168,
+      "heading": "Quiz catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 169,
+      "heading": "Problem library",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 170,
+      "heading": "Lab catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 171,
+      "heading": "Skills catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 172,
+      "heading": "Practice library",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 173,
+      "heading": "Exam catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 174,
+      "heading": "NEET catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 175,
+      "heading": "JEE catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 176,
+      "heading": "UPSC catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 177,
+      "heading": "Placement catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 178,
+      "heading": "Career catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 179,
+      "heading": "Credential wall",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Learner",
+      "module": 180,
+      "heading": "Marketplace browse",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 156,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 157,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 158,
+      "heading": "Library catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 159,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 160,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 161,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 162,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 163,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 164,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 165,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 166,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 167,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 168,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 169,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 170,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 171,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 172,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 173,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 174,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 175,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 176,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 177,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 178,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 179,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Librarian",
+      "module": 180,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 156,
+      "heading": "My courses",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 157,
+      "heading": "Content catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 158,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 159,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 160,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 161,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 162,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 163,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 164,
+      "heading": "Language preference",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 165,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 166,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 167,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 168,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 169,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 170,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 171,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 172,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 173,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 174,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 175,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 176,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 177,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 178,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 179,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 180,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 156,
+      "heading": "My courses",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 157,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 158,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 159,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 160,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 161,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 162,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 163,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 164,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 165,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 166,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 167,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 168,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 169,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 170,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 171,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 172,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 173,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 174,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 175,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 176,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 177,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 178,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 179,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Seller",
+      "module": 180,
+      "heading": "Marketplace browse",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 156,
+      "heading": "My courses",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 157,
+      "heading": "Content catalogue",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 158,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 159,
+      "heading": "Class schedule",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 160,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 161,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 162,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 163,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 164,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 165,
+      "heading": "Assignments",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 166,
+      "heading": "Feedback",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 167,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 168,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 169,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 170,
+      "heading": "Lab results",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 171,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 172,
+      "heading": "Teacher review",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 173,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 174,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 175,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 176,
+      "heading": "Teacher review",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 177,
+      "heading": "Teacher review",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 178,
+      "heading": "Teacher review",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 179,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "TA",
+      "module": 180,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Teacher",
+      "module": 156,
+      "heading": "My courses",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 157,
+      "heading": "Content catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 158,
+      "heading": "Library catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 159,
+      "heading": "Class schedule",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 160,
+      "heading": "Lecture library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 161,
+      "heading": "Path catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 162,
+      "heading": "What next",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 163,
+      "heading": "AI assistant",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 164,
+      "heading": "Language preference",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 165,
+      "heading": "Assignments",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 166,
+      "heading": "Feedback",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 167,
+      "heading": "Activities",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 168,
+      "heading": "Quiz catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 169,
+      "heading": "Problem library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 170,
+      "heading": "Lab catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 171,
+      "heading": "Skills catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 172,
+      "heading": "Practice library",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 173,
+      "heading": "Exam catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 174,
+      "heading": "NEET catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 175,
+      "heading": "JEE catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 176,
+      "heading": "UPSC catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 177,
+      "heading": "Placement catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 178,
+      "heading": "Career catalogue",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 179,
+      "heading": "Credential wall",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Teacher",
+      "module": 180,
+      "heading": "Marketplace browse",
+      "alerts": [],
+      "expected": "available"
+    },
+    {
+      "role": "Translator",
+      "module": 156,
+      "heading": "My courses",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 157,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 158,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 159,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 160,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 161,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 162,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 163,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 164,
+      "heading": "Language preference",
+      "expected": "available",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 165,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 166,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 167,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 168,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 169,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 170,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 171,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 172,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 173,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 174,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 175,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 176,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 177,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 178,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 179,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    },
+    {
+      "role": "Translator",
+      "module": 180,
+      "heading": "Role access denied",
+      "expected": "denied",
+      "alerts": []
+    }
+  ],
+  "secondary": [
+    {
+      "role": "Admin",
+      "module": 156,
+      "tab": "Cohorts",
+      "heading": "Cohorts & enrolments",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 156,
+      "tab": "Course staff",
+      "heading": "Course staff",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 156,
+      "tab": "Teaching dashboard",
+      "heading": "Teaching dashboard",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 157,
+      "tab": "Content review",
+      "heading": "Content review",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 157,
+      "tab": "Lesson editor",
+      "heading": "Lesson editor",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 158,
+      "tab": "Librarian dashboard",
+      "heading": "Librarian dashboard",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 158,
+      "tab": "My library",
+      "heading": "My library",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 158,
+      "tab": "Resource management",
+      "heading": "Resource management",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 159,
+      "tab": "Attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 160,
+      "tab": "Upload lecture",
+      "heading": "Upload lecture",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 161,
+      "tab": "My path",
+      "heading": "My path",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 161,
+      "tab": "Path builder",
+      "heading": "Path builder",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 161,
+      "tab": "Path progress",
+      "heading": "Path progress",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 162,
+      "tab": "Class insights",
+      "heading": "Class insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 162,
+      "tab": "Preferences",
+      "heading": "Preferences",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 163,
+      "tab": "Course tutor",
+      "heading": "Course tutor",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 163,
+      "tab": "Tutor review",
+      "heading": "Tutor review",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 163,
+      "tab": "Tutor settings",
+      "heading": "Tutor settings",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 164,
+      "tab": "Glossary",
+      "heading": "Glossary",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 164,
+      "tab": "Translation queue",
+      "heading": "Translation queue",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 165,
+      "tab": "Create assignment",
+      "heading": "Create assignment",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 166,
+      "tab": "Marking queue",
+      "heading": "Marking queue",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 167,
+      "tab": "Participation",
+      "heading": "Participation",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 168,
+      "tab": "Question bank",
+      "heading": "Question bank",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 168,
+      "tab": "Results",
+      "heading": "Results",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 169,
+      "tab": "Coding results",
+      "heading": "Coding results",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 170,
+      "tab": "Lab results",
+      "heading": "Lab results",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 171,
+      "tab": "Skills progress",
+      "heading": "Skills progress",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 172,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 173,
+      "tab": "Exam insights",
+      "heading": "Exam insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 174,
+      "tab": "NEET insights",
+      "heading": "NEET insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 174,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 175,
+      "tab": "JEE insights",
+      "heading": "JEE insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 175,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 176,
+      "tab": "Mains writing",
+      "heading": "Mains writing",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 176,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 176,
+      "tab": "UPSC insights",
+      "heading": "UPSC insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 177,
+      "tab": "Interview & GD",
+      "heading": "Interview & GD",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 177,
+      "tab": "Placement insights",
+      "heading": "Placement insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 177,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 178,
+      "tab": "Career insights",
+      "heading": "Career insights",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 178,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 179,
+      "tab": "Certificates",
+      "heading": "Certificates",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 179,
+      "tab": "Credential rules",
+      "heading": "Credential rules",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 179,
+      "tab": "Progress",
+      "heading": "Progress dashboard",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 179,
+      "tab": "Verify certificate",
+      "heading": "Verify certificate",
+      "errors": []
+    },
+    {
+      "role": "Admin",
+      "module": 180,
+      "tab": "Seller dashboard",
+      "heading": "Seller dashboard",
+      "errors": []
+    },
+    {
+      "role": "Author",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Author",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Author",
+      "module": 157,
+      "tab": "Lesson editor",
+      "heading": "Lesson editor",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 156,
+      "tab": "Cohorts",
+      "heading": "Cohorts & enrolments",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 156,
+      "tab": "Course staff",
+      "heading": "Course staff",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 156,
+      "tab": "Teaching dashboard",
+      "heading": "Teaching dashboard",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 158,
+      "tab": "My library",
+      "heading": "My library",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 159,
+      "tab": "Attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 161,
+      "tab": "My path",
+      "heading": "My path",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 161,
+      "tab": "Path progress",
+      "heading": "Path progress",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 162,
+      "tab": "Class insights",
+      "heading": "Class insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 162,
+      "tab": "Preferences",
+      "heading": "Preferences",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 163,
+      "tab": "Course tutor",
+      "heading": "Course tutor",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 164,
+      "tab": "Glossary",
+      "heading": "Glossary",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 167,
+      "tab": "Participation",
+      "heading": "Participation",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 168,
+      "tab": "Results",
+      "heading": "Results",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 169,
+      "tab": "Coding results",
+      "heading": "Coding results",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 170,
+      "tab": "Lab results",
+      "heading": "Lab results",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 171,
+      "tab": "Skills progress",
+      "heading": "Skills progress",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 173,
+      "tab": "Exam insights",
+      "heading": "Exam insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 174,
+      "tab": "NEET insights",
+      "heading": "NEET insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 174,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 175,
+      "tab": "JEE insights",
+      "heading": "JEE insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 175,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 176,
+      "tab": "Mains writing",
+      "heading": "Mains writing",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 176,
+      "tab": "UPSC insights",
+      "heading": "UPSC insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 177,
+      "tab": "Interview & GD",
+      "heading": "Interview & GD",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 177,
+      "tab": "Placement insights",
+      "heading": "Placement insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 178,
+      "tab": "Career insights",
+      "heading": "Career insights",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 179,
+      "tab": "Certificates",
+      "heading": "Certificates",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 179,
+      "tab": "Progress",
+      "heading": "Progress dashboard",
+      "errors": []
+    },
+    {
+      "role": "Coordinator",
+      "module": 179,
+      "tab": "Verify certificate",
+      "heading": "Verify certificate",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 158,
+      "tab": "My library",
+      "heading": "My library",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 159,
+      "tab": "Attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 161,
+      "tab": "My path",
+      "heading": "My path",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 162,
+      "tab": "Preferences",
+      "heading": "Preferences",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 163,
+      "tab": "Course tutor",
+      "heading": "Course tutor",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 164,
+      "tab": "Glossary",
+      "heading": "Glossary",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 168,
+      "tab": "Results",
+      "heading": "Results",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 169,
+      "tab": "Coding results",
+      "heading": "Coding results",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 170,
+      "tab": "Lab results",
+      "heading": "Lab results",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 174,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 175,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 176,
+      "tab": "Mains writing",
+      "heading": "Mains writing",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 177,
+      "tab": "Interview & GD",
+      "heading": "Interview & GD",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 179,
+      "tab": "Certificates",
+      "heading": "Certificates",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 179,
+      "tab": "Progress",
+      "heading": "Progress dashboard",
+      "errors": []
+    },
+    {
+      "role": "Learner",
+      "module": 179,
+      "tab": "Verify certificate",
+      "heading": "Verify certificate",
+      "errors": []
+    },
+    {
+      "role": "Librarian",
+      "module": 158,
+      "tab": "Librarian dashboard",
+      "heading": "Librarian dashboard",
+      "errors": []
+    },
+    {
+      "role": "Librarian",
+      "module": 158,
+      "tab": "My library",
+      "heading": "My library",
+      "errors": []
+    },
+    {
+      "role": "Librarian",
+      "module": 158,
+      "tab": "Resource management",
+      "heading": "Resource management",
+      "errors": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 157,
+      "tab": "Content review",
+      "heading": "Content review",
+      "errors": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 164,
+      "tab": "Glossary",
+      "heading": "Glossary",
+      "errors": []
+    },
+    {
+      "role": "Reviewer",
+      "module": 164,
+      "tab": "Translation queue",
+      "heading": "Translation queue",
+      "errors": []
+    },
+    {
+      "role": "Seller",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Seller",
+      "module": 156,
+      "tab": "Teaching dashboard",
+      "heading": "Teaching dashboard",
+      "errors": []
+    },
+    {
+      "role": "Seller",
+      "module": 180,
+      "tab": "Seller dashboard",
+      "heading": "Seller dashboard",
+      "errors": []
+    },
+    {
+      "role": "TA",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "TA",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "TA",
+      "module": 159,
+      "tab": "Attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "TA",
+      "module": 166,
+      "tab": "Marking queue",
+      "heading": "Marking queue",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 156,
+      "tab": "Cohorts",
+      "heading": "Cohorts & enrolments",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 156,
+      "tab": "Teaching dashboard",
+      "heading": "Teaching dashboard",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 157,
+      "tab": "Content review",
+      "heading": "Content review",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 157,
+      "tab": "Lesson editor",
+      "heading": "Lesson editor",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 158,
+      "tab": "My library",
+      "heading": "My library",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 159,
+      "tab": "Attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 160,
+      "tab": "Upload lecture",
+      "heading": "Upload lecture",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 161,
+      "tab": "My path",
+      "heading": "My path",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 161,
+      "tab": "Path builder",
+      "heading": "Path builder",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 161,
+      "tab": "Path progress",
+      "heading": "Path progress",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 162,
+      "tab": "Class insights",
+      "heading": "Class insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 162,
+      "tab": "Preferences",
+      "heading": "Preferences",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 163,
+      "tab": "Course tutor",
+      "heading": "Course tutor",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 163,
+      "tab": "Tutor review",
+      "heading": "Tutor review",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 163,
+      "tab": "Tutor settings",
+      "heading": "Tutor settings",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 164,
+      "tab": "Glossary",
+      "heading": "Glossary",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 164,
+      "tab": "Translation queue",
+      "heading": "Translation queue",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 165,
+      "tab": "Create assignment",
+      "heading": "Create assignment",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 166,
+      "tab": "Marking queue",
+      "heading": "Marking queue",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 167,
+      "tab": "Participation",
+      "heading": "Participation",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 168,
+      "tab": "Question bank",
+      "heading": "Question bank",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 168,
+      "tab": "Results",
+      "heading": "Results",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 169,
+      "tab": "Coding results",
+      "heading": "Coding results",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 170,
+      "tab": "Lab results",
+      "heading": "Lab results",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 171,
+      "tab": "Skills progress",
+      "heading": "Skills progress",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 172,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 173,
+      "tab": "Exam insights",
+      "heading": "Exam insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 174,
+      "tab": "NEET insights",
+      "heading": "NEET insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 174,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 175,
+      "tab": "JEE insights",
+      "heading": "JEE insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 175,
+      "tab": "Previous papers",
+      "heading": "Previous papers",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 176,
+      "tab": "Mains writing",
+      "heading": "Mains writing",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 176,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 176,
+      "tab": "UPSC insights",
+      "heading": "UPSC insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 177,
+      "tab": "Interview & GD",
+      "heading": "Interview & GD",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 177,
+      "tab": "Placement insights",
+      "heading": "Placement insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 177,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 178,
+      "tab": "Career insights",
+      "heading": "Career insights",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 178,
+      "tab": "Teacher review",
+      "heading": "Teacher review",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 179,
+      "tab": "Certificates",
+      "heading": "Certificates",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 179,
+      "tab": "Credential rules",
+      "heading": "Credential rules",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 179,
+      "tab": "Progress",
+      "heading": "Progress dashboard",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 179,
+      "tab": "Verify certificate",
+      "heading": "Verify certificate",
+      "errors": []
+    },
+    {
+      "role": "Teacher",
+      "module": 180,
+      "tab": "Seller dashboard",
+      "heading": "Seller dashboard",
+      "errors": []
+    },
+    {
+      "role": "Translator",
+      "module": 156,
+      "tab": "Course catalogue",
+      "heading": "Course catalogue",
+      "errors": []
+    },
+    {
+      "role": "Translator",
+      "module": 156,
+      "tab": "Notifications",
+      "heading": "Notifications & announcements",
+      "errors": []
+    },
+    {
+      "role": "Translator",
+      "module": 164,
+      "tab": "Glossary",
+      "heading": "Glossary",
+      "errors": []
+    },
+    {
+      "role": "Translator",
+      "module": 164,
+      "tab": "Translation queue",
+      "heading": "Translation queue",
+      "errors": []
+    }
+  ]
+}

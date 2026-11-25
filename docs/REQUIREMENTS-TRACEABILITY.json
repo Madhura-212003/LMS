@@ -1,0 +1,577 @@
+{
+  "source_srs": "SRS-F-156-180 v1.0",
+  "source_lld": "LLD-F-156-180 v1.0",
+  "release": "0.3.1",
+  "requirements": [
+    {
+      "id": "F-REQ-156-01",
+      "behavior": "LMS Home shows Continue Learning, upcoming, due, insights per role.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-02",
+      "behavior": "Left-bar modules + sub-features inside module.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-03",
+      "behavior": "Course Catalogue shows published courses (title, teacher, duration, level, rating, price/free).",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-04",
+      "behavior": "Course Editor creates/edits course.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-05",
+      "behavior": "Cohort Setup creates cohort (name, course, start/end, capacity, teacher).",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-06",
+      "behavior": "Enrolment Roster shows enrolled learners, enrol/remove, waitlist when full.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-07",
+      "behavior": "My Courses shows learner’s enrolled courses + progress.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-156-08",
+      "behavior": "Teaching Dashboard shows teacher’s courses, cohorts, pending marking, upcoming classes.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-157-01",
+      "behavior": "Content Editor creates/edits lesson content (text, media, files, quiz links).",
+      "implementation": "ContentWorkspace.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-157-02",
+      "behavior": "Content Review routes Draft → In Review → Approved / Needs Changes → Published.",
+      "implementation": "ContentWorkspace.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-157-03",
+      "behavior": "Course Viewer / Lesson Page shows lesson content in order, next/previous, progress, completion, AI Assistant inside lesson page.",
+      "implementation": "ContentWorkspace.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-157-04",
+      "behavior": "Content Catalogue lists all content with status + owner.",
+      "implementation": "ContentWorkspace.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-158-01",
+      "behavior": "Library Catalogue browses resources by title, subject, type, language.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-158-02",
+      "behavior": "Resource Management adds/edits/removes resources (librarian).",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-158-03",
+      "behavior": "My Library shows learner’s saved / borrowed resources.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-158-04",
+      "behavior": "Resource Reader opens a resource in-page.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-158-05",
+      "behavior": "Librarian Dashboard shows usage, popular resources, due / overdue.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-159-01",
+      "behavior": "Class Schedule / Manage creates/edits/cancels live classes (course, cohort, teacher, time, link).",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-159-02",
+      "behavior": "Live Class Room joins class, shows participants, chat, hand-raise.",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-159-03",
+      "behavior": "Attendance Summary shows present/absent/late per class + cohort.",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-159-04",
+      "behavior": "Learner Class Schedule shows learner’s upcoming / past classes.",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-160-01",
+      "behavior": "Lecture Upload / Edit / Publish uploads lecture, edits title/description, publishes/unpublishes.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-160-02",
+      "behavior": "Learner Lecture Player plays lecture with seek, speed, captions, notes.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-160-03",
+      "behavior": "Lecture Library / Search searches lectures by course, teacher, topic.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-161-01",
+      "behavior": "Path Builder creates a path (ordered steps: courses, lessons, quizzes, labs).",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-161-02",
+      "behavior": "Teacher Path Progress shows cohort progress per step.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-161-03",
+      "behavior": "Learner Path View shows learner’s path, current step, next step.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-161-04",
+      "behavior": "Path Catalogue / Search browses published paths.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-162-01",
+      "behavior": "Learner What Next recommends next lesson / activity from progress + gaps.",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-162-02",
+      "behavior": "Teacher Class Insights shows class strengths / gaps by topic.",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-162-03",
+      "behavior": "Personalisation Settings lets learner set goals, pace, language, notification preferences.",
+      "implementation": "LearningModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-163-01",
+      "behavior": "AI Tutor Chat answers learner questions (General + Lesson modes).",
+      "implementation": "page.tsx / ManagementModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-163-02",
+      "behavior": "Teacher Tutor Review shows tutor conversations / flagged answers.",
+      "implementation": "page.tsx / ManagementModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-163-03",
+      "behavior": "Tutor Policy / Settings sets allowed topics, tone, escalation, what tutor MUST NOT answer.",
+      "implementation": "page.tsx / ManagementModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-163-04",
+      "behavior": "AI Assistant (see §6) — summary / answer appears IN the lesson page.",
+      "implementation": "page.tsx / ManagementModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-164-01",
+      "behavior": "Language Preference sets learner’s UI + content language.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-164-02",
+      "behavior": "Translated Content View shows translated lesson.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-164-03",
+      "behavior": "Translation Queue / Editor queues untranslated content, lets translator edit + submit.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-164-04",
+      "behavior": "Glossary and Coverage shows glossary terms + translation coverage per course.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-165-01",
+      "behavior": "Assignment Create / Manage creates assignment (title, instructions, due date, marks, attachments).",
+      "implementation": "page.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-165-02",
+      "behavior": "Learner Assignment Submit uploads / submits, shows Submitted / Late / Resubmit states.",
+      "implementation": "page.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-165-03",
+      "behavior": "Teacher Submissions lists submissions per assignment with status.",
+      "implementation": "page.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-166-01",
+      "behavior": "Marking lets teacher mark a submission, add marks + feedback + rubric.",
+      "implementation": "page.tsx / feature-shared.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-166-02",
+      "behavior": "Marking / Re-evaluation Queue lists unmarked + re-evaluation requests.",
+      "implementation": "page.tsx / feature-shared.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-166-03",
+      "behavior": "Learner Feedback View shows marks, feedback, re-evaluation status.",
+      "implementation": "page.tsx / feature-shared.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-167-01",
+      "behavior": "Activity Create / Manage creates discussion / activity (prompt, due, groups).",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-167-02",
+      "behavior": "Learner Activity / Discussion lets learner post, reply, react.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-167-03",
+      "behavior": "Teacher Participation shows participation per learner.",
+      "implementation": "LearningModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-168-01",
+      "behavior": "Quiz Create / Manage creates quiz (questions, marks, time, attempts).",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-168-02",
+      "behavior": "Learner Quiz Attempt attempts with timer, auto-save, submit.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-168-03",
+      "behavior": "Teacher Quiz Results shows scores, per-question analysis.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-168-04",
+      "behavior": "Question Bank manages reusable questions by topic / difficulty.",
+      "implementation": "page.tsx / CoreManagement.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-169-01",
+      "behavior": "Coding Practice Library browses coding problems by topic / difficulty / language.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-169-02",
+      "behavior": "Coding Attempt / Editor lets learner write, run, and submit code with instant feedback.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-169-03",
+      "behavior": "Teacher Coding Results shows coding scores per learner.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-170-01",
+      "behavior": "Programming Lab Catalogue browses labs by subject / difficulty / language.",
+      "implementation": "PracticeModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-170-02",
+      "behavior": "Lab Session / IDE runs a lab step-by-step with code editor, inputs, observations, result.",
+      "implementation": "PracticeModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-170-03",
+      "behavior": "Teacher Lab Results shows lab completion + scores.",
+      "implementation": "PracticeModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-171-01",
+      "behavior": "Digital Skills Catalogue browses digital skills (e.g. MS Office, spreadsheets, typing, internet safety, AI tools).",
+      "implementation": "PracticeModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-171-02",
+      "behavior": "Learner Skills View shows track steps + progress + next step.",
+      "implementation": "PracticeModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-171-03",
+      "behavior": "Teacher Skills Progress shows cohort progress per skill.",
+      "implementation": "PracticeModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-172-01",
+      "behavior": "Communication Practice Library browses speaking / writing prompts.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-172-02",
+      "behavior": "Communication Practice Session records / submits a speaking / writing attempt with feedback.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-172-03",
+      "behavior": "Teacher Communication Review reviews attempts + gives feedback.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-173-01",
+      "behavior": "Competitive Exam Catalogue browses exam packs (e.g. CET, SSC, Banking, Railway).",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-173-02",
+      "behavior": "Exam Practice / Mock attempts timed mock papers with solutions.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-173-03",
+      "behavior": "Teacher Exam Insights shows cohort exam readiness.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-174-01",
+      "behavior": "NEET Catalogue browses NEET packs by subject (Physics / Chemistry / Botany / Zoology).",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-174-02",
+      "behavior": "NEET Practice / Mock attempts timed NEET mocks with solutions + negative-marking logic.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-174-03",
+      "behavior": "NEET Insights shows cohort NEET readiness + weak topics.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-174-04",
+      "behavior": "NEET Previous Papers browses previous-year papers with solutions.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-175-01",
+      "behavior": "JEE Catalogue browses JEE packs by subject (Physics / Chemistry / Maths) and level (Main / Advanced).",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-175-02",
+      "behavior": "JEE Practice / Mock attempts timed JEE mocks with solutions.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-175-03",
+      "behavior": "JEE Insights shows cohort JEE readiness + weak topics.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-175-04",
+      "behavior": "JEE Previous Papers browses previous-year papers with solutions.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-176-01",
+      "behavior": "UPSC Catalogue browses UPSC packs (GS I–IV, Optional, Essay, Current Affairs, Prelims / Mains).",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-176-02",
+      "behavior": "UPSC Practice / Mock attempts Prelims mocks + Mains answer-writing practice.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-176-03",
+      "behavior": "UPSC Insights shows cohort readiness + weak areas.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-177-01",
+      "behavior": "Placement Catalogue browses aptitude / interview / GD packs.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-177-02",
+      "behavior": "Placement Practice / Mock attempts mock tests / mock interviews / GD.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-177-03",
+      "behavior": "Teacher Placement Insights shows cohort placement readiness.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-178-01",
+      "behavior": "Career Skills Catalogue browses resume / interview / workplace skills.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-178-02",
+      "behavior": "Career Skills Activity completes an activity (resume, mock interview, portfolio).",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-178-03",
+      "behavior": "Teacher Career Insights shows cohort career readiness.",
+      "implementation": "PracticeModules.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-179-01",
+      "behavior": "Micro-Credential Catalogue shows micro-credentials + how to earn each.",
+      "implementation": "ManagementModules.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-179-02",
+      "behavior": "Learner Credential Wall shows learner’s earned micro-credentials + progress to next.",
+      "implementation": "ManagementModules.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-179-03",
+      "behavior": "Credential Rules / Award defines rules and awards credentials (auto on rule, or manual by teacher/admin).",
+      "implementation": "ManagementModules.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-179-04",
+      "behavior": "Certificate Detail / Verify shows certificate + verification (code / QR).",
+      "implementation": "ManagementModules.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-179-05",
+      "behavior": "Progress Dashboard shows overall progress, per-course progress, streak.",
+      "implementation": "ManagementModules.tsx / page.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-180-01",
+      "behavior": "Marketplace Browse browses paid / free courses from sellers.",
+      "implementation": "ManagementModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-180-02",
+      "behavior": "Marketplace Course Detail shows course, teacher, syllabus, reviews, price.",
+      "implementation": "ManagementModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-180-03",
+      "behavior": "Marketplace Purchase / Enrol enrols after purchase (preview only — no real payment settlement).",
+      "implementation": "ManagementModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    },
+    {
+      "id": "F-REQ-180-04",
+      "behavior": "Marketplace Seller Dashboard shows seller’s courses, enrolments, earnings (preview).",
+      "implementation": "ManagementModules.tsx / FinalWorkflows.tsx",
+      "evidence": "Automated domain tests plus source review; browser route smoke check, not individual action certification"
+    }
+  ],
+  "role_list_addendum": {
+    "implementation": [
+      "backend/lms/permissions.py",
+      "backend/lms/staff_api.py",
+      "backend/lms/keyset.py",
+      "backend/lms/list_queries.py",
+      "backend/lms/report_queries.py",
+      "frontend/app/role-navigation.ts",
+      "frontend/app/RoleWorkflows.tsx"
+    ],
+    "evidence": "94 backend tests; 8 frontend tests covering 250 actor/module combinations and default tabs; browser 250 primary routes and 166 allowed secondary tabs. Author-reviewer-learner content workflow persisted across reload. See FINAL-END-TO-END-CHECK.md; live services and PostgreSQL acceptance remain required."
+  }
+}

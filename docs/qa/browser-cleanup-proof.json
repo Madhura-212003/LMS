@@ -1,0 +1,16 @@
+{
+  "qa_accounts_removed": 10,
+  "qa_lesson_removed": 1,
+  "original_record_primary_keys": "preserved in every model",
+  "removed_records": {
+    "auth.User": 10,
+    "lms.Profile": 10,
+    "lms.Enrolment": 3,
+    "lms.Lesson": 1,
+    "lms.ContentReview": 3,
+    "lms.LessonCompletion": 1,
+    "lms.AuditLog": 57,
+    "lms.CourseStaffAssignment": 15,
+    "lms.LoginThrottle": 10
+  }
+}

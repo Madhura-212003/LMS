@@ -1,0 +1,15 @@
+{
+  "release": "0.3.1",
+  "steps": [
+    "Author saved lesson draft",
+    "Author submitted for review",
+    "Reviewer approved",
+    "Reviewer published",
+    "Learner opened published lesson",
+    "Learner completed lesson",
+    "Reloaded and reopened: Completed retained",
+    "Restarted final 0.3.1 preview: Completed retained"
+  ],
+  "result": "passed",
+  "externalProvidersInvoked": false
+}

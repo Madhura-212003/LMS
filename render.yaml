@@ -1,0 +1,60 @@
+# Shared demo only. Applying this provisions paid compute/storage/database resources.
+# Review Render's cost estimate before applying. No secrets belong in this file.
+services:
+  - type: web
+    name: admiezo-demo-backend
+    runtime: python
+    plan: starter
+    region: singapore
+    rootDir: backend
+    buildCommand: pip install -r requirements.lock
+    preDeployCommand: python manage.py migrate --noinput
+    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 1 --threads 2 --timeout 240 --access-logfile - --access-logformat '%(h)s %(m)s %(U)s %(s)s %(L)s' --error-logfile -
+    healthCheckPath: /api/lms/health/ready
+    autoDeployTrigger: off
+    disk:
+      name: demo-media
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: LMS_ENV
+        value: demo
+      - key: DJANGO_DEBUG
+        value: "0"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        sync: false
+      - key: PUBLIC_APP_URL
+        sync: false
+      - key: LMS_MEDIA_ROOT
+        value: /var/data/media
+      - key: POSTGRES_DB
+        fromDatabase:
+          name: admiezo-demo-db
+          property: database
+      - key: POSTGRES_HOST
+        fromDatabase:
+          name: admiezo-demo-db
+          property: host
+      - key: POSTGRES_PORT
+        fromDatabase:
+          name: admiezo-demo-db
+          property: port
+      - key: POSTGRES_USER
+        fromDatabase:
+          name: admiezo-demo-db
+          property: user
+      - key: POSTGRES_PASSWORD
+        fromDatabase:
+          name: admiezo-demo-db
+          property: password
+      - key: POSTGRES_SSLMODE
+        value: require
+databases:
+  - name: admiezo-demo-db
+    plan: "0.1c-256mb"
+    region: singapore
+    postgresMajorVersion: "16"
+    databaseName: admiezo_demo
+    ipAllowList: []

@@ -1,0 +1,71 @@
+# Deploy on an IT-managed Linux host. PostgreSQL, Entra, Blob, Jitsi and the
+# execution service are external institution services; no demo data is seeded.
+name: admiezo-lms
+services:
+  db-tools:
+    profiles: [maintenance]
+    image: postgres:16-alpine
+    env_file: .env.production
+    volumes: ["./backups:/backups"]
+    networks: [private]
+  backend:
+    image: ${LMS_BACKEND_IMAGE:?Set an immutable backend image tag or digest}
+    env_file: .env.production
+    environment:
+      LMS_ENV: production
+      DJANGO_DEBUG: "0"
+    restart: unless-stopped
+    stop_grace_period: 60s
+    read_only: true
+    tmpfs: ["/tmp:size=600m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    expose: ["8017"]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8017/api/lms/health/ready',headers={'X-Forwarded-Proto':'https'}),timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks: [private]
+  worker:
+    image: ${LMS_BACKEND_IMAGE:?Set an immutable backend image tag or digest}
+    env_file: .env.production
+    environment: {LMS_ENV: production, DJANGO_DEBUG: "0"}
+    command: [python, -u, manage.py, expire_attempts, --watch]
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp:size=32m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    networks: [private]
+  frontend:
+    image: ${LMS_FRONTEND_IMAGE:?Set an immutable frontend image tag or digest}
+    environment:
+      BACKEND_INTERNAL_URL: http://backend:8017
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp:size=32m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    expose: ["3000"]
+    healthcheck:
+      test: [CMD, node, -e, "require('http').get('http://127.0.0.1:3000/',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks: [private]
+  edge:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment: {LMS_DOMAIN: "${LMS_DOMAIN:?Set the public LMS DNS name}"}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    networks: [private]
+networks:
+  private:
+volumes:
+  caddy-data:
+  caddy-config:

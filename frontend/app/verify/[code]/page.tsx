@@ -1,0 +1,6 @@
+export default async function VerifyCertificate({params}:{params:Promise<{code:string}>}){
+ const {code}=await params;
+ let result:{status:string;credential:string;learner:string;issued_at:string}|null=null;
+ try{const response=await fetch((process.env.BACKEND_INTERNAL_URL||'http://127.0.0.1:8017')+'/api/lms/certificates/verify/'+encodeURIComponent(code),{cache:'no-store'});if(response.ok)result=await response.json();}catch{}
+ return <main className="public-verifier"><div className="brand">a<span>admiezo</span></div><section className="panel certificate-detail"><div className="medal">✺</div><div className="eyebrow">CERTIFICATE VERIFICATION</div><h1>{result?result.status==='Valid'?'Verified credential':'Certificate '+result.status:'Certificate not found'}</h1>{result?<><h2>{result.credential}</h2><p>Awarded to <b>{result.learner}</b></p><p>Issued {new Date(result.issued_at).toLocaleDateString()}</p><p className="certificate-code">{code}</p><p>{result.status==='Valid'?'This code matches an active credential in the institution record.':'This certificate is no longer valid. Contact the institution for clarification.'}</p></>:<p>Check the verification code and try the original certificate link again. If the institution service is unavailable, retry later.</p>}</section></main>;
+}
